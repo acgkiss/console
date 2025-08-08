@@ -1,4 +1,4 @@
-// This file is part of MinIO Console Server
+﻿// This file is part of MinIO Console Server
 // Copyright (c) 2022 MinIO, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
@@ -21,8 +21,8 @@ import (
 	"testing"
 	"time"
 
-	mc "github.com/minio/mc/cmd"
-	"github.com/minio/minio-go/v7"
+	mc "github.com/acgkiss/mc/cmd"
+	"github.com/acgkiss/minio-go/v7"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -234,3 +234,4 @@ func TestWSListObjects(t *testing.T) {
 		})
 	}
 }
+

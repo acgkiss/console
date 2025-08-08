@@ -1,4 +1,4 @@
-// This file is part of MinIO Console Server
+﻿// This file is part of MinIO Console Server
 // Copyright (c) 2021 MinIO, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
@@ -26,18 +26,18 @@ import (
 	"strings"
 	"time"
 
-	"github.com/minio/minio-go/v7/pkg/sse"
-	xnet "github.com/minio/pkg/v3/net"
+	"github.com/acgkiss/minio-go/v7/pkg/sse"
+	xnet "github.com/acgkiss/pkg/v3/net"
 
-	"github.com/minio/console/models"
-	"github.com/minio/console/pkg"
-	xjwt "github.com/minio/console/pkg/auth/token"
-	mc "github.com/minio/mc/cmd"
-	"github.com/minio/mc/pkg/probe"
-	"github.com/minio/minio-go/v7"
-	"github.com/minio/minio-go/v7/pkg/credentials"
-	"github.com/minio/minio-go/v7/pkg/notification"
-	"github.com/minio/minio-go/v7/pkg/tags"
+	"github.com/acgkiss/console/models"
+	"github.com/acgkiss/console/pkg"
+	xjwt "github.com/acgkiss/console/pkg/auth/token"
+	mc "github.com/acgkiss/mc/cmd"
+	"github.com/acgkiss/mc/pkg/probe"
+	"github.com/acgkiss/minio-go/v7"
+	"github.com/acgkiss/minio-go/v7/pkg/credentials"
+	"github.com/acgkiss/minio-go/v7/pkg/notification"
+	"github.com/acgkiss/minio-go/v7/pkg/tags"
 )
 
 func init() {
@@ -431,3 +431,4 @@ func newS3Config(endpoint, accessKey, secretKey, sessionToken string, clientIP s
 		},
 	}
 }
+

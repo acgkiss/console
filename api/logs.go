@@ -1,4 +1,4 @@
-// This file is part of MinIO Console Server
+﻿// This file is part of MinIO Console Server
 // Copyright (c) 2021 MinIO, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
@@ -23,7 +23,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/minio/cli"
+	"github.com/acgkiss/cli"
 )
 
 var (
@@ -81,3 +81,4 @@ func (c *Context) Load(ctx *cli.Context) error {
 	}
 	return nil
 }
+

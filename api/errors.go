@@ -1,4 +1,4 @@
-// This file is part of MinIO Console Server
+﻿// This file is part of MinIO Console Server
 // Copyright (c) 2022 MinIO, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
@@ -21,10 +21,10 @@ import (
 	"errors"
 	"strings"
 
-	"github.com/minio/minio-go/v7"
+	"github.com/acgkiss/minio-go/v7"
 
-	"github.com/minio/console/models"
-	"github.com/minio/madmin-go/v3"
+	"github.com/acgkiss/console/models"
+	"github.com/acgkiss/madmin-go/v3"
 )
 
 var (
@@ -277,3 +277,4 @@ func Error(err ...interface{}) *CodedAPIError {
 	defer cancel()
 	return ErrorWithContext(ctx, err...)
 }
+

@@ -1,4 +1,4 @@
-// This file is part of MinIO Console Server
+﻿// This file is part of MinIO Console Server
 // Copyright (c) 2022 MinIO, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
@@ -21,7 +21,7 @@ import (
 	"regexp"
 	"runtime"
 
-	"github.com/minio/console/pkg/logger/color"
+	"github.com/acgkiss/console/pkg/logger/color"
 )
 
 var ansiRE = regexp.MustCompile("(\x1b[^m]*m)")
@@ -58,3 +58,4 @@ func ansiRestoreAttributes() {
 		ansiEscape("8")
 	}
 }
+

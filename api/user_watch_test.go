@@ -1,4 +1,4 @@
-// This file is part of MinIO Console Server
+﻿// This file is part of MinIO Console Server
 // Copyright (c) 2021 MinIO, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
@@ -25,8 +25,8 @@ import (
 	"testing"
 	"time"
 
-	mc "github.com/minio/mc/cmd"
-	"github.com/minio/mc/pkg/probe"
+	mc "github.com/acgkiss/mc/cmd"
+	"github.com/acgkiss/mc/pkg/probe"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -298,3 +298,4 @@ func TestWatch(t *testing.T) {
 	_, err = getWatchOptionsFromReq(req)
 	assert.Error(err)
 }
+

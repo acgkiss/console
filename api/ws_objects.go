@@ -1,4 +1,4 @@
-// This file is part of MinIO Console Server
+﻿// This file is part of MinIO Console Server
 // Copyright (c) 2023 MinIO, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
@@ -24,8 +24,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/minio/console/models"
-	"github.com/minio/websocket"
+	"github.com/acgkiss/console/models"
+	"github.com/acgkiss/websocket"
 )
 
 func (wsc *wsMinioClient) objectManager(session *models.Principal) {
@@ -286,3 +286,4 @@ func (wsc *wsMinioClient) objectManager(session *models.Principal) {
 		}
 	}
 }
+

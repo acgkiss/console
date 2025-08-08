@@ -1,4 +1,4 @@
-// This file is part of MinIO Console Server
+﻿// This file is part of MinIO Console Server
 // Copyright (c) 2022 MinIO, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
@@ -29,8 +29,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/minio/minio-go/v7"
-	"github.com/minio/minio-go/v7/pkg/credentials"
+	"github.com/acgkiss/minio-go/v7"
+	"github.com/acgkiss/minio-go/v7/pkg/credentials"
 
 	"github.com/stretchr/testify/assert"
 )
@@ -262,3 +262,4 @@ func TestDownloadMultipleFiles(t *testing.T) {
 		})
 	}
 }
+

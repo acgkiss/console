@@ -1,4 +1,4 @@
-// This file is part of MinIO Console Server
+﻿// This file is part of MinIO Console Server
 // Copyright (c) 2021 MinIO, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
@@ -25,10 +25,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/minio/console/pkg/auth/idp/oauth2"
-	xcerts "github.com/minio/pkg/v3/certs"
-	"github.com/minio/pkg/v3/env"
-	xnet "github.com/minio/pkg/v3/net"
+	"github.com/acgkiss/console/pkg/auth/idp/oauth2"
+	xcerts "github.com/acgkiss/pkg/v3/certs"
+	"github.com/acgkiss/pkg/v3/env"
+	xnet "github.com/acgkiss/pkg/v3/net"
 )
 
 var (
@@ -278,3 +278,4 @@ func getConsoleAnimatedLogin() bool {
 func getConsoleBrowserRedirectURL() string {
 	return env.Get(ConsoleBrowserRedirectURL, "")
 }
+

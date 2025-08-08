@@ -1,4 +1,4 @@
-// This file is part of MinIO Console Server
+﻿// This file is part of MinIO Console Server
 // Copyright (c) 2022 MinIO, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
@@ -21,7 +21,7 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/minio/console/pkg/utils"
+	"github.com/acgkiss/console/pkg/utils"
 )
 
 // KeyVal - appended to ReqInfo.Tags
@@ -115,3 +115,4 @@ func GetReqInfo(ctx context.Context) *ReqInfo {
 	}
 	return nil
 }
+

@@ -1,4 +1,4 @@
-// This file is part of MinIO Console Server
+﻿// This file is part of MinIO Console Server
 // Copyright (c) 2023 MinIO, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
@@ -19,7 +19,7 @@ package api
 import (
 	"context"
 
-	"github.com/minio/madmin-go/v3"
+	"github.com/acgkiss/madmin-go/v3"
 )
 
 type AdminClientMock struct {
@@ -33,3 +33,4 @@ func (ac AdminClientMock) kmsStatus(_ context.Context) (madmin.KMSStatus, error)
 func (ac AdminClientMock) AccountInfo(ctx context.Context) (madmin.AccountInfo, error) {
 	return ac.minioAccountInfoMock(ctx)
 }
+

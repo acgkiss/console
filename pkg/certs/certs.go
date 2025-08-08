@@ -1,4 +1,4 @@
-// This file is part of MinIO Console Server
+﻿// This file is part of MinIO Console Server
 // Copyright (c) 2021 MinIO, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
@@ -28,9 +28,9 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/minio/cli"
-	xcerts "github.com/minio/pkg/v3/certs"
-	"github.com/minio/pkg/v3/env"
+	"github.com/acgkiss/cli"
+	xcerts "github.com/acgkiss/pkg/v3/certs"
+	"github.com/acgkiss/pkg/v3/env"
 	"github.com/mitchellh/go-homedir"
 )
 
@@ -234,18 +234,18 @@ func GetTLSConfig() (x509Certs []*x509.Certificate, manager *xcerts.Manager, err
 
 	// Console has support for multiple certificates. It expects the following structure:
 	// certs/
-	//  │
-	//  ├─ public.crt
-	//  ├─ private.key
-	//  │
-	//  ├─ example.com/
-	//  │   │
-	//  │   ├─ public.crt
-	//  │   └─ private.key
-	//  └─ foobar.org/
-	//     │
-	//     ├─ public.crt
-	//     └─ private.key
+	//  鈹?
+	//  鈹溾攢 public.crt
+	//  鈹溾攢 private.key
+	//  鈹?
+	//  鈹溾攢 example.com/
+	//  鈹?  鈹?
+	//  鈹?  鈹溾攢 public.crt
+	//  鈹?  鈹斺攢 private.key
+	//  鈹斺攢 foobar.org/
+	//     鈹?
+	//     鈹溾攢 public.crt
+	//     鈹斺攢 private.key
 	//  ...
 	//
 	// Therefore, we read all filenames in the cert directory and check
@@ -316,3 +316,4 @@ func GetAllCertificatesAndCAs() (*x509.CertPool, []*x509.Certificate, *xcerts.Ma
 }
 
 // EnsureCertAndKey checks if both client certificate and key paths are provided
+

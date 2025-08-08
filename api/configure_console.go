@@ -1,4 +1,4 @@
-// This file is part of MinIO Console Server
+﻿// This file is part of MinIO Console Server
 // Copyright (c) 2021 MinIO, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
@@ -39,22 +39,22 @@ import (
 
 	"github.com/google/uuid"
 
-	"github.com/minio/console/pkg/logger"
-	"github.com/minio/console/pkg/utils"
-	"github.com/minio/minio-go/v7/pkg/credentials"
+	"github.com/acgkiss/console/pkg/logger"
+	"github.com/acgkiss/console/pkg/utils"
+	"github.com/acgkiss/minio-go/v7/pkg/credentials"
 
 	"github.com/klauspost/compress/gzhttp"
 
-	portal_ui "github.com/minio/console/web-app"
-	"github.com/minio/pkg/v3/env"
-	"github.com/minio/pkg/v3/mimedb"
-	xnet "github.com/minio/pkg/v3/net"
+	portal_ui "github.com/acgkiss/console/web-app"
+	"github.com/acgkiss/pkg/v3/env"
+	"github.com/acgkiss/pkg/v3/mimedb"
+	xnet "github.com/acgkiss/pkg/v3/net"
 
 	"github.com/go-openapi/errors"
 	"github.com/go-openapi/swag"
-	"github.com/minio/console/api/operations"
-	"github.com/minio/console/models"
-	"github.com/minio/console/pkg/auth"
+	"github.com/acgkiss/console/api/operations"
+	"github.com/acgkiss/console/models"
+	"github.com/acgkiss/console/pkg/auth"
 	"github.com/unrolled/secure"
 )
 
@@ -562,3 +562,4 @@ func requestBounce(handler http.Handler) http.Handler {
 		handler.ServeHTTP(w, r)
 	})
 }
+

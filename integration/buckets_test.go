@@ -1,4 +1,4 @@
-// This file is part of MinIO Console Server
+﻿// This file is part of MinIO Console Server
 // Copyright (c) 2021 MinIO, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
@@ -29,8 +29,8 @@ import (
 	"time"
 
 	"github.com/go-openapi/loads"
-	"github.com/minio/console/api"
-	"github.com/minio/console/api/operations"
+	"github.com/acgkiss/console/api"
+	"github.com/acgkiss/console/api/operations"
 )
 
 var token string
@@ -171,3 +171,4 @@ func TestMain(m *testing.M) {
 
 	os.Exit(code)
 }
+

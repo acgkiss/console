@@ -1,4 +1,4 @@
-// This file is part of MinIO Console Server
+﻿// This file is part of MinIO Console Server
 // Copyright (c) 2024 MinIO, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
@@ -27,9 +27,9 @@ import (
 	"github.com/go-openapi/runtime"
 	"github.com/go-openapi/runtime/middleware"
 	"github.com/go-openapi/swag"
-	"github.com/minio/console/api/operations"
-	"github.com/minio/console/api/operations/public"
-	xnet "github.com/minio/pkg/v3/net"
+	"github.com/acgkiss/console/api/operations"
+	"github.com/acgkiss/console/api/operations/public"
+	xnet "github.com/acgkiss/pkg/v3/net"
 )
 
 func registerPublicObjectsHandlers(api *operations.ConsoleAPI) {
@@ -126,3 +126,4 @@ func splitStr(path, sep string, n int) []string {
 	}
 	return splits
 }
+

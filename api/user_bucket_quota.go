@@ -1,4 +1,4 @@
-// This file is part of MinIO Console Server
+﻿// This file is part of MinIO Console Server
 // Copyright (c) 2021 MinIO, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
@@ -20,10 +20,10 @@ import (
 	"context"
 
 	"github.com/go-openapi/runtime/middleware"
-	"github.com/minio/console/api/operations"
-	bucektApi "github.com/minio/console/api/operations/bucket"
+	"github.com/acgkiss/console/api/operations"
+	bucektApi "github.com/acgkiss/console/api/operations/bucket"
 
-	"github.com/minio/console/models"
+	"github.com/acgkiss/console/models"
 )
 
 func registerBucketQuotaHandlers(api *operations.ConsoleAPI) {
@@ -65,3 +65,4 @@ func getBucketQuota(ctx context.Context, ac *AdminClient, bucket *string) (*mode
 		Type:  string(quota.Type),
 	}, nil
 }
+

@@ -1,4 +1,4 @@
-// This file is part of MinIO Console Server
+﻿// This file is part of MinIO Console Server
 // Copyright (c) 2021 MinIO, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
@@ -32,9 +32,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/minio/console/models"
-	"github.com/minio/console/pkg/auth/token"
-	"github.com/minio/minio-go/v7/pkg/credentials"
+	"github.com/acgkiss/console/models"
+	"github.com/acgkiss/console/pkg/auth/token"
+	"github.com/acgkiss/minio-go/v7/pkg/credentials"
 	"github.com/secure-io/sio-go/sioutil"
 	"golang.org/x/crypto/chacha20"
 	"golang.org/x/crypto/chacha20poly1305"
@@ -343,3 +343,4 @@ func GetClaimsFromTokenInRequest(req *http.Request) (*models.Principal, error) {
 		AccountAccessKey:   claims.AccountAccessKey,
 	}, nil
 }
+

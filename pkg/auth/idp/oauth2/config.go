@@ -1,4 +1,4 @@
-// This file is part of MinIO Console Server
+﻿// This file is part of MinIO Console Server
 // Copyright (c) 2021 MinIO, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
@@ -24,8 +24,8 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/minio/minio-go/v7/pkg/set"
-	"github.com/minio/pkg/v3/env"
+	"github.com/acgkiss/minio-go/v7/pkg/set"
+	"github.com/acgkiss/pkg/v3/env"
 	"golang.org/x/crypto/pbkdf2"
 	"golang.org/x/oauth2"
 	xoauth2 "golang.org/x/oauth2"
@@ -134,3 +134,4 @@ type OpenIDPCfg map[string]ProviderConfig
 func GetSTSEndpoint() string {
 	return strings.TrimSpace(env.Get(ConsoleMinIOServer, "http://localhost:9000"))
 }
+

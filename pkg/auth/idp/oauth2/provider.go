@@ -1,4 +1,4 @@
-// This file is part of MinIO Console Server
+﻿// This file is part of MinIO Console Server
 // Copyright (c) 2021 MinIO, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
@@ -27,11 +27,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/minio/console/pkg/auth/token"
-	"github.com/minio/console/pkg/auth/utils"
-	"github.com/minio/minio-go/v7/pkg/credentials"
-	"github.com/minio/minio-go/v7/pkg/set"
-	"github.com/minio/pkg/v3/env"
+	"github.com/acgkiss/console/pkg/auth/token"
+	"github.com/acgkiss/console/pkg/auth/utils"
+	"github.com/acgkiss/minio-go/v7/pkg/credentials"
+	"github.com/acgkiss/minio-go/v7/pkg/set"
+	"github.com/acgkiss/pkg/v3/env"
 	"golang.org/x/oauth2"
 	xoauth2 "golang.org/x/oauth2"
 )
@@ -384,3 +384,4 @@ func (client *Provider) GenerateLoginURL(keyFunc StateKeyFunc, iDPName string) s
 
 	return strings.TrimSpace(loginURL)
 }
+

@@ -1,4 +1,4 @@
-// This file is part of MinIO Console Server
+﻿// This file is part of MinIO Console Server
 // Copyright (c) 2022 MinIO, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
@@ -31,15 +31,15 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/minio/pkg/v3/env"
+	"github.com/acgkiss/pkg/v3/env"
 
-	"github.com/minio/console/pkg"
-	"github.com/minio/pkg/v3/certs"
+	"github.com/acgkiss/console/pkg"
+	"github.com/acgkiss/pkg/v3/certs"
 
-	"github.com/minio/console/pkg/logger/config"
-	"github.com/minio/console/pkg/logger/message/log"
-	"github.com/minio/highwayhash"
-	"github.com/minio/minio-go/v7/pkg/set"
+	"github.com/acgkiss/console/pkg/logger/config"
+	"github.com/acgkiss/console/pkg/logger/message/log"
+	"github.com/acgkiss/highwayhash"
+	"github.com/acgkiss/minio-go/v7/pkg/set"
 )
 
 // HighwayHash key for logging in anonymous mode
@@ -138,7 +138,7 @@ func uniqueEntries(paths []string) []string {
 }
 
 // Init sets the trimStrings to possible GOPATHs
-// and GOROOT directories. Also append github.com/minio/minio
+// and GOROOT directories. Also append github.com/acgkiss/minio
 // This is done to clean up the filename, when stack trace is
 // displayed when an errors happens.
 func Init(goPath, goRoot string) {
@@ -182,9 +182,9 @@ func Init(goPath, goRoot string) {
 	// Remove duplicate entries.
 	trimStrings = uniqueEntries(trimStrings)
 
-	// Add "github.com/minio/minio" as the last to cover
-	// paths like "{GOROOT}/src/github.com/minio/minio"
-	// and "{GOPATH}/src/github.com/minio/minio"
+	// Add "github.com/acgkiss/minio" as the last to cover
+	// paths like "{GOROOT}/src/github.com/acgkiss/minio"
+	// and "{GOPATH}/src/github.com/acgkiss/minio"
 	trimStrings = append(trimStrings, filepath.Join("github.com", "minio", "minio")+string(filepath.Separator))
 }
 
@@ -473,3 +473,4 @@ func NewHTTPTransportWithClientCerts(parentTransport *http.Transport, clientCert
 	}
 	return transport
 }
+

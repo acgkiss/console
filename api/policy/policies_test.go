@@ -1,4 +1,4 @@
-// This file is part of MinIO Console Server
+﻿// This file is part of MinIO Console Server
 // Copyright (c) 2022 MinIO, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
@@ -21,8 +21,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/minio/madmin-go/v3"
-	minioIAMPolicy "github.com/minio/pkg/v3/policy"
+	"github.com/acgkiss/madmin-go/v3"
+	minioIAMPolicy "github.com/acgkiss/pkg/v3/policy"
 )
 
 func TestReplacePolicyVariables(t *testing.T) {
@@ -110,3 +110,4 @@ func TestReplacePolicyVariables(t *testing.T) {
 		})
 	}
 }
+

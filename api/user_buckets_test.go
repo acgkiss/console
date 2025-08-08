@@ -1,4 +1,4 @@
-// This file is part of MinIO Console Server
+﻿// This file is part of MinIO Console Server
 // Copyright (c) 2021 MinIO, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
@@ -25,18 +25,18 @@ import (
 	"testing"
 	"time"
 
-	"github.com/minio/minio-go/v7/pkg/notification"
+	"github.com/acgkiss/minio-go/v7/pkg/notification"
 
-	"github.com/minio/console/pkg/auth/token"
-	"github.com/minio/console/pkg/utils"
+	"github.com/acgkiss/console/pkg/auth/token"
+	"github.com/acgkiss/console/pkg/utils"
 
 	"github.com/go-openapi/swag"
-	"github.com/minio/console/models"
-	"github.com/minio/madmin-go/v3"
-	"github.com/minio/mc/pkg/probe"
-	"github.com/minio/minio-go/v7"
-	"github.com/minio/minio-go/v7/pkg/sse"
-	"github.com/minio/minio-go/v7/pkg/tags"
+	"github.com/acgkiss/console/models"
+	"github.com/acgkiss/madmin-go/v3"
+	"github.com/acgkiss/mc/pkg/probe"
+	"github.com/acgkiss/minio-go/v7"
+	"github.com/acgkiss/minio-go/v7/pkg/sse"
+	"github.com/acgkiss/minio-go/v7/pkg/tags"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -1011,3 +1011,4 @@ func Test_getMaxShareLinkExpirationSeconds(t *testing.T) {
 		})
 	}
 }
+

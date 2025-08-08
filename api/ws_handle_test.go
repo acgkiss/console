@@ -1,4 +1,4 @@
-// This file is part of MinIO Console Server
+﻿// This file is part of MinIO Console Server
 // Copyright (c) 2021 MinIO, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
@@ -21,7 +21,7 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/minio/websocket"
+	"github.com/acgkiss/websocket"
 )
 
 // Common mocks for WSConn interface
@@ -80,3 +80,4 @@ func TestWSHandle(_ *testing.T) {
 	<-ctx3.Done()
 	// closed ctx correctly
 }
+

@@ -1,4 +1,4 @@
-// This file is part of MinIO Console Server
+﻿// This file is part of MinIO Console Server
 // Copyright (c) 2022 MinIO, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
@@ -22,9 +22,9 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/minio/console/pkg/utils"
+	"github.com/acgkiss/console/pkg/utils"
 
-	"github.com/minio/console/models"
+	"github.com/acgkiss/console/models"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -131,3 +131,4 @@ func Test_getListOfEnabledFeatures(t *testing.T) {
 		})
 	}
 }
+

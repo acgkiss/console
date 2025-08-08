@@ -1,4 +1,4 @@
-// This file is part of MinIO Console Server
+﻿// This file is part of MinIO Console Server
 // Copyright (c) 2021 MinIO, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
@@ -19,8 +19,8 @@ package auth
 import (
 	"context"
 
-	"github.com/minio/console/pkg/auth/idp/oauth2"
-	"github.com/minio/minio-go/v7/pkg/credentials"
+	"github.com/acgkiss/console/pkg/auth/idp/oauth2"
+	"github.com/acgkiss/minio-go/v7/pkg/credentials"
 	xoauth2 "golang.org/x/oauth2"
 )
 
@@ -57,3 +57,4 @@ func (c IdentityProvider) VerifyIdentityForOperator(ctx context.Context, code, s
 func (c IdentityProvider) GenerateLoginURL() string {
 	return c.Client.GenerateLoginURL(c.KeyFunc, c.Client.IDPName)
 }
+

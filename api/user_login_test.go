@@ -1,4 +1,4 @@
-// This file is part of MinIO Console Server
+﻿// This file is part of MinIO Console Server
 // Copyright (c) 2021 MinIO, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
@@ -22,11 +22,11 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/minio/madmin-go/v3"
+	"github.com/acgkiss/madmin-go/v3"
 
-	iampolicy "github.com/minio/pkg/v3/policy"
+	iampolicy "github.com/acgkiss/pkg/v3/policy"
 
-	"github.com/minio/minio-go/v7/pkg/credentials"
+	"github.com/acgkiss/minio-go/v7/pkg/credentials"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -117,3 +117,4 @@ func Test_getAccountInfo(t *testing.T) {
 		})
 	}
 }
+

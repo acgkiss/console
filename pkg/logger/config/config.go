@@ -1,4 +1,4 @@
-// This file is part of MinIO Console Server
+﻿// This file is part of MinIO Console Server
 // Copyright (c) 2022 MinIO, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
@@ -17,7 +17,7 @@
 package config
 
 import (
-	"github.com/minio/madmin-go/v3"
+	"github.com/acgkiss/madmin-go/v3"
 )
 
 // Default keys
@@ -30,3 +30,4 @@ const (
 	LoggerWebhookSubSys = "logger_webhook"
 	AuditWebhookSubSys  = "audit_webhook"
 )
+

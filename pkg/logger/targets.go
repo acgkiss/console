@@ -1,4 +1,4 @@
-// This file is part of MinIO Console Server
+﻿// This file is part of MinIO Console Server
 // Copyright (c) 2022 MinIO, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
@@ -20,8 +20,8 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"github.com/minio/console/pkg/logger/target/http"
-	"github.com/minio/console/pkg/logger/target/types"
+	"github.com/acgkiss/console/pkg/logger/target/http"
+	"github.com/acgkiss/console/pkg/logger/target/types"
 )
 
 // Target is the entity that we will receive
@@ -149,3 +149,4 @@ func UpdateAuditWebhookTargets(cfg Config) error {
 	swapMu.Unlock()
 	return nil
 }
+

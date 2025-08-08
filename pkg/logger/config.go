@@ -1,4 +1,4 @@
-// This file is part of MinIO Console Server
+﻿// This file is part of MinIO Console Server
 // Copyright (c) 2022 MinIO, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
@@ -23,9 +23,9 @@ import (
 
 	"github.com/google/uuid"
 
-	"github.com/minio/console/pkg/logger/config"
-	"github.com/minio/console/pkg/logger/target/http"
-	"github.com/minio/pkg/v3/env"
+	"github.com/acgkiss/console/pkg/logger/config"
+	"github.com/acgkiss/console/pkg/logger/target/http"
+	"github.com/acgkiss/pkg/v3/env"
 )
 
 // NewConfig - initialize new logger config.
@@ -211,3 +211,4 @@ func mustGetUUID() string {
 	}
 	return u.String()
 }
+

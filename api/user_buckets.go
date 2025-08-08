@@ -1,4 +1,4 @@
-// This file is part of MinIO Console Server
+﻿// This file is part of MinIO Console Server
 // Copyright (c) 2021 MinIO, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
@@ -25,20 +25,20 @@ import (
 	"strings"
 	"time"
 
-	"github.com/minio/minio-go/v7"
+	"github.com/acgkiss/minio-go/v7"
 
 	"github.com/go-openapi/runtime/middleware"
 	"github.com/go-openapi/swag"
-	"github.com/minio/console/api/operations"
-	bucketApi "github.com/minio/console/api/operations/bucket"
-	"github.com/minio/console/models"
-	"github.com/minio/console/pkg/auth/token"
-	"github.com/minio/madmin-go/v3"
-	"github.com/minio/mc/cmd"
-	"github.com/minio/mc/pkg/probe"
-	"github.com/minio/minio-go/v7/pkg/credentials"
-	"github.com/minio/minio-go/v7/pkg/policy"
-	minioIAMPolicy "github.com/minio/pkg/v3/policy"
+	"github.com/acgkiss/console/api/operations"
+	bucketApi "github.com/acgkiss/console/api/operations/bucket"
+	"github.com/acgkiss/console/models"
+	"github.com/acgkiss/console/pkg/auth/token"
+	"github.com/acgkiss/madmin-go/v3"
+	"github.com/acgkiss/mc/cmd"
+	"github.com/acgkiss/mc/pkg/probe"
+	"github.com/acgkiss/minio-go/v7/pkg/credentials"
+	"github.com/acgkiss/minio-go/v7/pkg/policy"
+	minioIAMPolicy "github.com/acgkiss/pkg/v3/policy"
 )
 
 func registerBucketsHandlers(api *operations.ConsoleAPI) {
@@ -572,3 +572,4 @@ func getMaxShareLinkExpirationSeconds(session *models.Principal) (int64, error) 
 
 	return int64(maxShareLinkExp.Seconds()), nil
 }
+

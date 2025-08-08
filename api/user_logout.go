@@ -1,4 +1,4 @@
-// This file is part of MinIO Console Server
+﻿// This file is part of MinIO Console Server
 // Copyright (c) 2021 MinIO, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
@@ -29,10 +29,10 @@ import (
 
 	"github.com/go-openapi/runtime"
 	"github.com/go-openapi/runtime/middleware"
-	"github.com/minio/console/api/operations"
-	authApi "github.com/minio/console/api/operations/auth"
-	"github.com/minio/console/models"
-	"github.com/minio/console/pkg/auth/idp/oauth2"
+	"github.com/acgkiss/console/api/operations"
+	authApi "github.com/acgkiss/console/api/operations/auth"
+	"github.com/acgkiss/console/models"
+	"github.com/acgkiss/console/pkg/auth/idp/oauth2"
 )
 
 func registerLogoutHandlers(api *operations.ConsoleAPI) {
@@ -121,3 +121,4 @@ func logoutFromIDPProvider(r *http.Request, state string) error {
 
 	return nil
 }
+

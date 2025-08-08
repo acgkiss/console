@@ -1,4 +1,4 @@
-// This file is part of MinIO Console Server
+﻿// This file is part of MinIO Console Server
 // Copyright (c) 2021 MinIO, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
@@ -24,13 +24,13 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/minio/console/pkg"
+	"github.com/acgkiss/console/pkg"
 
-	"github.com/minio/console/pkg/utils"
+	"github.com/acgkiss/console/pkg/utils"
 
-	"github.com/minio/console/models"
-	"github.com/minio/madmin-go/v3"
-	"github.com/minio/minio-go/v7/pkg/credentials"
+	"github.com/acgkiss/console/models"
+	"github.com/acgkiss/madmin-go/v3"
+	"github.com/acgkiss/minio-go/v7/pkg/credentials"
 )
 
 const globalAppName = "MinIO Console"
@@ -188,3 +188,4 @@ func getClientIP(r *http.Request) string {
 	}
 	return raddr
 }
+

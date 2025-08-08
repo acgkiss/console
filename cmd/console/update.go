@@ -1,4 +1,4 @@
-// This file is part of MinIO Console Server
+﻿// This file is part of MinIO Console Server
 // Copyright (c) 2021 MinIO, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
@@ -30,9 +30,9 @@ import (
 
 	"github.com/blang/semver/v4"
 	"github.com/cheggaaa/pb/v3"
-	"github.com/minio/cli"
-	"github.com/minio/console/pkg"
-	"github.com/minio/selfupdate"
+	"github.com/acgkiss/cli"
+	"github.com/acgkiss/console/pkg"
+	"github.com/acgkiss/selfupdate"
 )
 
 func getUpdateTransport(timeout time.Duration) http.RoundTripper {
@@ -118,7 +118,7 @@ func updateInplace(_ *cli.Context) error {
 		return nil
 	}
 
-	consoleBin := fmt.Sprintf("https://github.com/minio/console/releases/download/%s/console-%s-%s", rel, runtime.GOOS, runtime.GOARCH)
+	consoleBin := fmt.Sprintf("https://github.com/acgkiss/console/releases/download/%s/console-%s-%s", rel, runtime.GOOS, runtime.GOARCH)
 	reader, length, err := getUpdateReaderFromURL(consoleBin, transport)
 	if err != nil {
 		return fmt.Errorf("unable to fetch binary from %s: %w", consoleBin, err)
@@ -152,3 +152,4 @@ func updateInplace(_ *cli.Context) error {
 	fmt.Printf("Updated 'console' to latest release %s\n", rel)
 	return nil
 }
+

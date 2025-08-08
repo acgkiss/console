@@ -1,4 +1,4 @@
-// This file is part of MinIO Console Server
+﻿// This file is part of MinIO Console Server
 // Copyright (c) 2022 MinIO, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
@@ -52,7 +52,7 @@ func TestNewEntry(t *testing.T) {
 }
 
 // TODO: Please assist in fixing this test whenever you have the opportunity.
-// This test hasn't been executed for a long time. Upon its reintroduction in https://github.com/minio/console/pull/3171,
+// This test hasn't been executed for a long time. Upon its reintroduction in https://github.com/acgkiss/console/pull/3171,
 // the test began to fail. I'm uncertain whether this test was passing from the outset or not,
 // but it should pass if utilized within our coverage.
 // func TestToEntry(t *testing.T) {
@@ -119,3 +119,4 @@ func TestNewEntry(t *testing.T) {
 // 		})
 // 	}
 // }
+

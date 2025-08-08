@@ -1,4 +1,4 @@
-// This file is part of MinIO Console Server
+﻿// This file is part of MinIO Console Server
 // Copyright (c) 2021 MinIO, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
@@ -21,7 +21,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/minio/console/models"
+	"github.com/acgkiss/console/models"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -156,3 +156,4 @@ func TestErrorWithContext(t *testing.T) {
 		})
 	}
 }
+

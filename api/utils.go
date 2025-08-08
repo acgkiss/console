@@ -1,4 +1,4 @@
-// This file is part of MinIO Console Server
+﻿// This file is part of MinIO Console Server
 // Copyright (c) 2021 MinIO, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
@@ -26,7 +26,7 @@ import (
 	"strings"
 	"time"
 
-	xjwt "github.com/minio/console/pkg/auth/token"
+	xjwt "github.com/acgkiss/console/pkg/auth/token"
 )
 
 // Do not use:
@@ -253,3 +253,4 @@ func isSafeToPreview(str string) bool {
 	}
 	return false
 }
+

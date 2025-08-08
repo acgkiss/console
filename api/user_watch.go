@@ -1,4 +1,4 @@
-// This file is part of MinIO Console Server
+﻿// This file is part of MinIO Console Server
 // Copyright (c) 2021 MinIO, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
@@ -24,8 +24,8 @@ import (
 	"regexp"
 	"strings"
 
-	mc "github.com/minio/mc/cmd"
-	"github.com/minio/websocket"
+	mc "github.com/acgkiss/mc/cmd"
+	"github.com/acgkiss/websocket"
 )
 
 type watchOptions struct {
@@ -106,3 +106,4 @@ func getWatchOptionsFromReq(req *http.Request) (*watchOptions, error) {
 	wOptions.Suffix = req.FormValue("suffix")
 	return &wOptions, nil
 }
+

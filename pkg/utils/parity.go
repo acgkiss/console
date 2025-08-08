@@ -1,4 +1,4 @@
-// This file is part of MinIO Console Server
+﻿// This file is part of MinIO Console Server
 // Copyright (c) 2021 MinIO, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
@@ -21,7 +21,7 @@ import (
 	"fmt"
 	"sort"
 
-	"github.com/minio/pkg/v3/ellipses"
+	"github.com/acgkiss/pkg/v3/ellipses"
 )
 
 // This file implements and supports ellipses pattern for
@@ -217,3 +217,4 @@ func parseEndpointSet(args ...string) (setIndexes [][]uint64, err error) {
 
 	return getSetIndexes(args, getTotalSizes(argPatterns), argPatterns)
 }
+

@@ -1,4 +1,4 @@
-// This file is part of MinIO Console Server
+﻿// This file is part of MinIO Console Server
 // Copyright (c) 2021 MinIO, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
@@ -23,18 +23,18 @@ import (
 	"strconv"
 	"time"
 
-	policies "github.com/minio/console/api/policy"
-	"github.com/minio/madmin-go/v3"
+	policies "github.com/acgkiss/console/api/policy"
+	"github.com/acgkiss/madmin-go/v3"
 
 	jwtgo "github.com/golang-jwt/jwt/v4"
-	"github.com/minio/pkg/v3/policy/condition"
+	"github.com/acgkiss/pkg/v3/policy/condition"
 
-	minioIAMPolicy "github.com/minio/pkg/v3/policy"
+	minioIAMPolicy "github.com/acgkiss/pkg/v3/policy"
 
 	"github.com/go-openapi/runtime/middleware"
-	"github.com/minio/console/api/operations"
-	authApi "github.com/minio/console/api/operations/auth"
-	"github.com/minio/console/models"
+	"github.com/acgkiss/console/api/operations"
+	authApi "github.com/acgkiss/console/api/operations/auth"
+	"github.com/acgkiss/console/models"
 )
 
 type Conditions struct {
@@ -264,3 +264,4 @@ func getListOfEnabledFeatures(session *models.Principal) []string {
 
 	return features
 }
+

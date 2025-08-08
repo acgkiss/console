@@ -1,4 +1,4 @@
-// This file is part of MinIO Console Server
+﻿// This file is part of MinIO Console Server
 // Copyright (c) 2021 MinIO, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
@@ -30,14 +30,14 @@ import (
 	"time"
 
 	"github.com/go-openapi/runtime/middleware"
-	"github.com/minio/console/api/operations/object"
+	"github.com/acgkiss/console/api/operations/object"
 
 	"github.com/go-openapi/swag"
-	"github.com/minio/console/models"
-	mc "github.com/minio/mc/cmd"
-	"github.com/minio/mc/pkg/probe"
-	"github.com/minio/minio-go/v7"
-	"github.com/minio/minio-go/v7/pkg/tags"
+	"github.com/acgkiss/console/models"
+	mc "github.com/acgkiss/mc/cmd"
+	"github.com/acgkiss/mc/pkg/probe"
+	"github.com/acgkiss/minio-go/v7"
+	"github.com/acgkiss/minio-go/v7/pkg/tags"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -1403,3 +1403,4 @@ func Test_getMultipleFilesDownloadResponse(t *testing.T) {
 		})
 	}
 }
+

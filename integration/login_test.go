@@ -1,4 +1,4 @@
-// This file is part of MinIO Console Server
+﻿// This file is part of MinIO Console Server
 // Copyright (c) 2021 MinIO, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
@@ -26,7 +26,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/minio/console/models"
+	"github.com/acgkiss/console/models"
 
 	"github.com/stretchr/testify/assert"
 )
@@ -190,3 +190,4 @@ func TestBadLogin(t *testing.T) {
 	assert.NotNil(response, "Login response is  nil")
 	assert.Nil(err, "Login errored out")
 }
+

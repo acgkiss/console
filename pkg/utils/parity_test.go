@@ -1,4 +1,4 @@
-// This file is part of MinIO Console Server
+﻿// This file is part of MinIO Console Server
 // Copyright (c) 2021 MinIO, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
@@ -20,7 +20,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/minio/pkg/v3/ellipses"
+	"github.com/acgkiss/pkg/v3/ellipses"
 )
 
 func TestGetDivisibleSize(t *testing.T) {
@@ -291,3 +291,4 @@ func TestPossibleParities(t *testing.T) {
 		})
 	}
 }
+

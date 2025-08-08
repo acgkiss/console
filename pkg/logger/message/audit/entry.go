@@ -1,4 +1,4 @@
-// This file is part of MinIO Console Server
+﻿// This file is part of MinIO Console Server
 // Copyright (c) 2022 MinIO, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
@@ -26,9 +26,9 @@ import (
 
 	"github.com/golang-jwt/jwt/v4"
 
-	"github.com/minio/console/pkg/utils"
+	"github.com/acgkiss/console/pkg/utils"
 
-	xhttp "github.com/minio/console/pkg/http"
+	xhttp "github.com/acgkiss/console/pkg/http"
 )
 
 // Version - represents the current version of audit log structure.
@@ -130,3 +130,4 @@ func ToEntry(w http.ResponseWriter, r *http.Request, reqClaims map[string]interf
 
 	return entry
 }
+

@@ -1,4 +1,4 @@
-// This file is part of MinIO Console Server
+﻿// This file is part of MinIO Console Server
 // Copyright (c) 2021 MinIO, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
@@ -19,7 +19,7 @@ package kes
 import (
 	"time"
 
-	"github.com/minio/kes"
+	"github.com/acgkiss/kes"
 )
 
 type Identity = kes.Identity
@@ -176,3 +176,4 @@ type ServerConfig struct {
 	Log      Log               `yaml:"log,omitempty" json:"log,omitempty"`
 	Keys     Keys              `yaml:"keys,omitempty" json:"keys,omitempty"`
 }
+

@@ -1,4 +1,4 @@
-// This file is part of MinIO Console Server
+﻿// This file is part of MinIO Console Server
 // Copyright (c) 2022 MinIO, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
@@ -19,7 +19,7 @@ package logger
 import (
 	"context"
 
-	"github.com/minio/console/pkg/logger/target/http"
+	"github.com/acgkiss/console/pkg/logger/target/http"
 )
 
 // Audit/Logger constants
@@ -54,3 +54,4 @@ var (
 	globalDeploymentID string
 	GlobalContext      context.Context
 )
+

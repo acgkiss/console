@@ -1,4 +1,4 @@
-// This file is part of MinIO Console Server
+﻿// This file is part of MinIO Console Server
 // Copyright (c) 2023 MinIO, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
@@ -39,7 +39,7 @@ import (
 	flags "github.com/jessevdk/go-flags"
 	"golang.org/x/net/netutil"
 
-	"github.com/minio/console/api/operations"
+	"github.com/acgkiss/console/api/operations"
 )
 
 const (
@@ -554,3 +554,4 @@ func handleInterrupt(once *sync.Once, s *Server) {
 func signalNotify(interrupt chan<- os.Signal) {
 	signal.Notify(interrupt, syscall.SIGINT, syscall.SIGTERM)
 }
+

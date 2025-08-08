@@ -1,4 +1,4 @@
-// This file is part of MinIO Console Server
+﻿// This file is part of MinIO Console Server
 // Copyright (c) 2022 MinIO, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
@@ -21,7 +21,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/minio/madmin-go/v3"
+	"github.com/acgkiss/madmin-go/v3"
 )
 
 // ReplacePolicyVariables replaces known variables from policies with known values
@@ -84,3 +84,4 @@ func replaceLDAPVariables(rawPolicy []byte, claims map[string]interface{}) json.
 	}
 	return rawPolicy
 }
+

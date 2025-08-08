@@ -1,4 +1,4 @@
-// This file is part of MinIO Console Server
+﻿// This file is part of MinIO Console Server
 // Copyright (c) 2021 MinIO, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
@@ -23,10 +23,10 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/minio/console/pkg/logger"
+	"github.com/acgkiss/console/pkg/logger"
 
-	"github.com/minio/cli"
-	"github.com/minio/console/api"
+	"github.com/acgkiss/cli"
+	"github.com/acgkiss/console/api"
 )
 
 var appCmds = []cli.Command{
@@ -94,3 +94,4 @@ func StartServer(ctx *cli.Context) error {
 
 	return nil
 }
+

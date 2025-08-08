@@ -1,4 +1,4 @@
-// This file is part of MinIO Console Server
+﻿// This file is part of MinIO Console Server
 // Copyright (c) 2021 MinIO, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
@@ -26,10 +26,10 @@ import (
 	"strings"
 
 	errorsApi "github.com/go-openapi/errors"
-	"github.com/minio/console/models"
-	"github.com/minio/console/pkg/auth"
-	"github.com/minio/console/pkg/utils"
-	"github.com/minio/websocket"
+	"github.com/acgkiss/console/models"
+	"github.com/acgkiss/console/pkg/auth"
+	"github.com/acgkiss/console/pkg/utils"
+	"github.com/acgkiss/websocket"
 )
 
 var upgrader = websocket.Upgrader{
@@ -231,3 +231,4 @@ func closeWsConn(conn *websocket.Conn) {
 	conn.WriteMessage(websocket.CloseMessage, websocket.FormatCloseMessage(websocket.CloseNormalClosure, ""))
 	conn.Close()
 }
+

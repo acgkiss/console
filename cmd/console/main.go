@@ -1,4 +1,4 @@
-// This file is part of MinIO Console Server
+﻿// This file is part of MinIO Console Server
 // Copyright (c) 2021 MinIO, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
@@ -23,11 +23,11 @@ import (
 	"sort"
 	"time"
 
-	"github.com/minio/cli"
-	"github.com/minio/console/pkg"
-	"github.com/minio/pkg/v3/console"
-	"github.com/minio/pkg/v3/trie"
-	"github.com/minio/pkg/v3/words"
+	"github.com/acgkiss/cli"
+	"github.com/acgkiss/console/pkg"
+	"github.com/acgkiss/pkg/v3/console"
+	"github.com/acgkiss/pkg/v3/trie"
+	"github.com/acgkiss/pkg/v3/words"
 )
 
 // Help template for Console.
@@ -106,13 +106,13 @@ func newApp(name string) *cli.App {
 	app.HideHelpCommand = true // Hide `help, h` command, we already have `minio --help`.
 	app.CustomAppHelpTemplate = consoleHelpTemplate
 	app.CommandNotFound = func(_ *cli.Context, command string) {
-		console.Printf("‘%s’ is not a console sub-command. See ‘console --help’.\n", command)
+		console.Printf("鈥?s鈥?is not a console sub-command. See 鈥榗onsole --help鈥?\n", command)
 		closestCommands := findClosestCommands(command)
 		if len(closestCommands) > 0 {
 			console.Println()
 			console.Println("Did you mean one of these?")
 			for _, cmd := range closestCommands {
-				console.Printf("\t‘%s’\n", cmd)
+				console.Printf("\t鈥?s鈥橽n", cmd)
 			}
 		}
 
@@ -131,3 +131,4 @@ func main() {
 		os.Exit(1)
 	}
 }
+

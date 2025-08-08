@@ -1,4 +1,4 @@
-// This file is part of MinIO Console Server
+﻿// This file is part of MinIO Console Server
 // Copyright (c) 2022 MinIO, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
@@ -29,9 +29,9 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/minio/console/pkg/utils"
+	"github.com/acgkiss/console/pkg/utils"
 
-	"github.com/minio/console/pkg/logger/message/audit"
+	"github.com/acgkiss/console/pkg/logger/message/audit"
 )
 
 // ResponseWriter - is a wrapper to trap the http response status code.
@@ -239,3 +239,4 @@ func AuditLog(ctx context.Context, w *ResponseWriter, r *http.Request, reqClaims
 		}
 	}
 }
+

@@ -1,4 +1,4 @@
-// This file is part of MinIO Console Server
+﻿// This file is part of MinIO Console Server
 // Copyright (c) 2022 MinIO, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
@@ -28,8 +28,8 @@ import (
 	"sync/atomic"
 	"time"
 
-	xhttp "github.com/minio/console/pkg/http"
-	"github.com/minio/console/pkg/logger/target/types"
+	xhttp "github.com/acgkiss/console/pkg/http"
+	"github.com/acgkiss/console/pkg/logger/target/types"
 )
 
 // Timeout for the webhook http call
@@ -223,3 +223,4 @@ func (h *Target) Cancel() {
 func (h *Target) Type() types.TargetType {
 	return types.TargetHTTP
 }
+

@@ -1,4 +1,4 @@
-// This file is part of MinIO Console Server
+﻿// This file is part of MinIO Console Server
 // Copyright (c) 2022 MinIO, Inc.
 //
 // This program is free software: you can redistribute it and/or modify
@@ -23,9 +23,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/minio/console/pkg/logger/color"
-	"github.com/minio/console/pkg/logger/message/log"
-	c "github.com/minio/pkg/v3/console"
+	"github.com/acgkiss/console/pkg/logger/color"
+	"github.com/acgkiss/console/pkg/logger/message/log"
+	c "github.com/acgkiss/pkg/v3/console"
 )
 
 // Logger interface describes the methods that need to be implemented to satisfy the interface requirements.
@@ -218,3 +218,4 @@ func Error(msg string, data ...interface{}) {
 func Info(msg string, data ...interface{}) {
 	consoleLog(info, msg, data...)
 }
+
